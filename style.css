@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #1A5AFF;
+    --secoundary-color: #25262A;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 !important;
+}
+
+a {
+    text-decoration: none !important;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+}
+
+button:focus {
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Inter", serif;
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #25262A;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.np {
+    padding: 0 !important;
+}
+
+.nm {
+    margin: 0 !important;
+}
+
+.container {
+    max-width: 1280px;
+}
+
+
+/* HEADER START  */
+
+.header-area-wrapper {
+    padding: 47px 0 70px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content ul {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.header-content ul li {
+    position: relative;
+}
+
+.header-content ul li.has-child::after {
+    content: "";
+    position: absolute;
+    right: 28px;
+    top: 8px;
+    width: 12px;
+    height: 8px;
+    background: url(images/icn/Vector.svg) no-repeat center;
+    background-size: contain;
+}
+
+.header-content ul li a {
+    color: var(--secoundary-color);
+    opacity: 0.8;
+    outline-style: 16px;
+    margin-right: 48px;
+}
+
+.header-content ul li a:hover {
+    opacity: 1;
+}
+
+.header-content ul li:last-child a {
+    margin: 0;
+}
+
+.header-content ul li a.active {
+    font-weight: 600;
+    opacity: 1;
+}
+
+.header-content ul li ul {
+    position: absolute;
+    background: #f8f8f8;
+    display: block;
+    min-width: 200px;
+    padding: 10px;
+    top: calc(100% + 8px);
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header-content ul li ul a {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.header-content ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header-content ul li ul li:last-child a {
+    margin: 0;
+}
+
+.btn-one {
+    background-color: var(--primary-color);
+    font-size: 16px;
+    color: #fff;
+    border-radius: 12px;
+    font-family: "Inter", serif;
+    padding: 20px 40px;
+}
+
+/* HEADER END  */
