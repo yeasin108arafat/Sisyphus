@@ -157,3 +157,38 @@ p {
 }
 
 /* HEADER END  */
+
+/* BANNER START  */
+
+.banner-content ul {
+    display: flex;
+    align-items: center;
+}
+
+.banner-content ul li {
+    margin-left: -12px;
+}
+
+.banner-content b {
+    font-size: 14px;
+    padding-left: 6px;
+}
+
+.banner-content h1 {
+    padding: 24px 0;
+    font-size: 56px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner-content h1 span {
+    color: var(--primary-color);
+}
+
+.banner-content.text-center p {
+    max-width: 550px;
+    margin: auto;
+}
+
+
+/* BANNER ENG  */
